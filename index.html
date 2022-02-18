@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom Randomizer</title>
+    <!--CSS STYLESHEETS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!--JQUERY LINK-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <!--HERO-->
+    <section class="hero is-info">
+        <div class="hero-body">
+            <p class="title has-text-centered">
+                Classroom Randomizer
+            </p>
+        </div>
+    </section>
+
+    <!--STUDENT NAME INPUT-->
+    <section>
+        <textarea id="students" class="textarea is-info" placeholder="Enter Student Names Here:"></textarea>
+    </section>
+
+    <!--GROUP NUMBER OR SIZE SELECTION-->
+    <section class="has-text-centered">
+        <label class="radio">
+            <input type="radio" name="groupType">
+                # of Groups
+        </label>
+        <label class="radio">
+            <input type="radio" name="groupType">
+                # of Students in Each Group
+        </label>
+        <div class="field has-addons">
+            <div class="control is-expanded">
+              <input class="input" type="text" placeholder="Enter # Here">
+            </div>
+            <div class="control">
+              <a class="button is-info is-outlined">
+                Create Groups
+              </a>
+            </div>
+        </div>
+    </section>
+
+    <!--SPACE FOR CREATED GROUPS TO POPULATE-->
+    <section>
+        <div class="container is-fluid has-background-info">
+            <h1 class="title-is-1 has-text-centered has-text-white">Your Custom Groups!</h1>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
