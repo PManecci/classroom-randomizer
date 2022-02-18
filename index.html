@@ -30,19 +30,19 @@
     <!--GROUP NUMBER OR SIZE SELECTION-->
     <section class="has-text-centered">
         <label class="radio">
-            <input type="radio" name="groupType">
+            <input id="numberOfGroups" type="radio" name="groupType">
                 # of Groups
         </label>
         <label class="radio">
-            <input type="radio" name="groupType">
+            <input id="numberOfStudents" type="radio" name="groupType">
                 # of Students in Each Group
         </label>
         <div class="field has-addons">
             <div class="control is-expanded">
-              <input class="input" type="text" placeholder="Enter # Here">
+              <input id="amount" class="input" type="text" placeholder="Enter # Here">
             </div>
             <div class="control">
-              <a class="button is-info is-outlined">
+              <a class="button is-info is-outlined" onclick="getInput()" value="submit">
                 Create Groups
               </a>
             </div>
@@ -52,7 +52,7 @@
     <!--SPACE FOR CREATED GROUPS TO POPULATE-->
     <section>
         <div class="container is-fluid has-background-info">
-            <h1 class="title-is-1 has-text-centered has-text-white">Your Custom Groups!</h1>
+            <h1 id="output" class="title-is-1 has-text-centered has-text-white">Your Custom Groups!</h1>
         </div>
     </section>
 
